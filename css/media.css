@@ -1,0 +1,1831 @@
+.nav-toggle,
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width:1300px) {
+
+    body,
+    html {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: clip;
+    }
+
+    .wrap {
+        width: calc(100% - 40px)
+    }
+
+    .section {
+        width: 100%;
+        min-height: auto;
+        padding: 50px 0;
+        overflow: hidden;
+        box-sizing: border-box
+    }
+
+    /* ======Nav starts ========== */
+
+    .experience .wrap {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .experience-text h2 {
+        font-size: clamp(2.5rem, 5.6vw, 3.0rem);
+    }
+
+    .experience-text p {
+        width: 100%;
+        max-width: 100%;
+        line-height: 1.75;
+    }
+
+    .experience-text .btn {
+        display: flex;
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .experience-image {
+        height: auto;
+    }
+
+    .local_chapter .wrap {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 10px;
+    }
+
+    .local_chapter-top {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .local_chapter-text h2 {
+        font-size: clamp(2.5rem, 8vw, 3.0rem);
+    }
+
+    .local_chapter-text p {
+        width: 100%;
+        max-width: 100%;
+        line-height: 1.75;
+    }
+
+    .local_chapter-image {
+        height: auto;
+    }
+
+    .local_chapter-categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 16px;
+        margin-top: 28px;
+        padding: 28px 0;
+    }
+
+    .local_chapter-categories span {
+        font-size: 10px;
+    }
+
+    .temples .wrap {
+        padding: 20px 0;
+    }
+
+    /* Section heading */
+
+    .temple-head h2 {
+        font-size: clamp(2.2rem, 9vw, 2.8rem);
+    }
+
+    .temple-head p {
+        font-size: 14px;
+    }
+
+    /* Horizontal timeline */
+
+    .route-viewport {
+        width: 100%;
+        margin: 30px 0 25px;
+    }
+
+    .route-track {
+        width: max-content;
+        min-width: 100%;
+        padding: 0 35px;
+    }
+
+    .route-stop {
+        flex: 0 0 150px;
+        height: 55px;
+    }
+
+    .route-stop .nm {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .route-line {
+        left: 110px;
+        right: 110px;
+        top: 7px;
+    }
+
+    .route-fill {
+        left: 110px;
+        top: 6px;
+    }
+
+    /* Destination cards */
+
+    .dest-carousel {
+        padding: 0;
+    }
+
+    .dest-track {
+        width: 100%;
+    }
+
+    .dest-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .dest-img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .dest-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .dest-desc {
+        padding: 10px 5px;
+        min-width: 0;
+    }
+
+    .dest-desc h3 {
+        font-size: clamp(1.8rem, 8vw, 2.3rem);
+    }
+
+    .dest-desc>p {
+        font-size: 14px;
+        line-height: 1.7;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Highlights */
+
+    .dest-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 12px 0;
+    }
+
+    .highlight-item {
+        min-width: 0;
+        padding: 12px 5px;
+        text-align: start;
+    }
+
+    .highlight-item strong {
+        font-size: 12px;
+        text-align: start;
+    }
+
+    .highlight-item span {
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .highlight-item small {
+        font-size: 10px;
+    }
+
+    /* Navigation */
+
+    .dest-nav {
+        display: none;
+    }
+
+    .dest-cta {
+        display: block;
+        min-width: 190px;
+        text-align: center;
+    }
+
+    .guide {
+        padding: 40px 0;
+    }
+
+    .guide .wrap {
+        padding: 20px 0;
+    }
+
+    .visitor-guide {
+        grid-template-columns: 1fr;
+    }
+
+    .terms_conditions,
+    .faq {
+        padding: 20px 16px;
+    }
+
+    .terms_conditions {
+        height: 100%;
+    }
+
+    .question {
+        flex-wrap: wrap;
+    }
+
+    .question a {
+        margin-left: auto;
+    }
+
+    .form {
+        padding: 35px 0 20px;
+    }
+
+    .form .wrap {
+        padding: 0 10px;
+    }
+
+    /* Stack booking form and villa details */
+    .booking-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    .booking-form,
+    .villa-details {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+
+    /* Guest details */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    /* Activity selection */
+    .selection-status {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px 12px;
+    }
+
+    .selection-status small {
+        text-align: left;
+    }
+
+    /* Footer */
+    .form-footer {
+        flex-wrap: wrap;
+        margin-top: 16px;
+        padding-top: 10px;
+    }
+
+    .form-heading h2 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .form-heading>p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* Eyebrow labels and step indicators */
+    .form-kicker,
+    .form-step {
+        font-size: 10px;
+        letter-spacing: .06em;
+    }
+
+    /* Form section headings */
+    .form-block h3,
+    .villa-details h3 {
+        font-size: 19px;
+        line-height: 1.2;
+    }
+
+    /* Descriptions and helper text */
+    .form-hint,
+    .form-notice p,
+    .activity-notice p,
+    .villa-details>p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* Form containers */
+    .booking-form {
+        padding: 12px;
+    }
+
+    .form-block {
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+    }
+
+    .form-notice {
+        padding: 10px 12px;
+        margin-bottom: 15px;
+    }
+
+    /* Inputs */
+    .booking-form input:not([type="radio"]):not([type="checkbox"]),
+    .booking-form textarea,
+    .booking-form select {
+        min-height: 40px;
+        padding: 9px 10px;
+        font-size: 16px;
+    }
+
+    /* Stay duration */
+    .stay-options label>span {
+        min-height: 46px;
+    }
+
+    .stay-options strong {
+        font-size: 11px;
+    }
+
+    .stay-options small {
+        font-size: 10px;
+    }
+
+    /* Activity accordion */
+    .experience-options summary {
+        min-height: 43px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .option-info strong {
+        font-size: 11px;
+    }
+
+    .option-info small {
+        font-size: 10px;
+    }
+
+    .view-options {
+        font-size: 9px;
+    }
+
+    .option-content {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    /* Selection counter */
+    .selection-status span,
+    .selection-status small {
+        font-size: 10px;
+    }
+
+    /* Additional message */
+    .message-block textarea {
+        min-height: 70px;
+    }
+
+    /* WhatsApp button */
+    .booking-submit {
+        min-height: 42px;
+        padding: 11px 12px;
+        font-size: 13px;
+        letter-spacing: .02em;
+    }
+
+    /* Disclaimer */
+    .form-disclaimer {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    /* Villa contact details */
+    .contact-info {
+        gap: 13px;
+        margin: 15px 0;
+    }
+
+    .contact-info p,
+    .planning-help p {
+        font-size: 11px;
+    }
+
+    .planning-help {
+        padding: 12px;
+    }
+
+    /* Footer */
+    .form-footer span {
+        font-size: 9px;
+    }
+
+
+    .nav-left,
+    .nav-right {
+        display: none !important;
+    }
+
+   .nav-wrap {
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .nav-toggle {
+        display: flex !important;
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 54px;
+        height: 54px;
+        background-color: #37392f;
+        border-radius: 50%;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 999999;
+        padding: 0;
+        border: none;
+    }
+
+    .nav-toggle span {
+        width: 20px !important;
+        height: 2px !important;
+        background-color: #ffffff !important;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* Animated "X" close state */
+    .nav-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-logo {
+        margin-inline: auto;
+    }
+
+    .nav-logo img {
+        width: 155px;
+        height: 48px;
+    }
+
+    /* Mobile Fullscreen Menu (Hidden until toggled active) */
+    .mobile-nav {
+        display: flex;
+        position: fixed;
+        bottom: 90px;
+        right: 24px;
+
+        width: 220px;
+        height: auto;
+        padding: 25px 20px;
+
+        background-color: rgba(20, 26, 22, 0.97);
+        backdrop-filter: blur(8px);
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+        z-index: 999998;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transform: translateY(10px);
+        transition: opacity 0.3s ease,
+            visibility 0.3s ease,
+            transform 0.3s ease;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+    }
+
+    .mobile-nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    .mobile-nav-links a:hover {
+        color: #c5a572;
+    }
+
+    /* ==========================================================
+     EXACT MOBILE HERO STACK WITH DIAGONAL SLANT
+     ========================================================== */
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding-top: calc(var(--nav-h) + 10px);
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero-container {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .hero-eyebrow {
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    .hero-title {
+        font-size: clamp(34px, 8vw, 44px);
+        line-height: 1.15;
+        margin-bottom: 16px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+
+    /* Creates the diagonal cut wrapper below the text box */
+    .hero-bg-wrapper {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 340px;
+        margin: 15px 0 0 0;
+        border-radius: 0;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        z-index: 1;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
+        border-radius: 0;
+    }
+
+    /* Indoor & Outdoor card stack fixes */
+    #indoor,
+    #outdoor {
+        padding: 20px 0;
+        overflow: visible !important;
+    }
+
+    #indoor .unwind-section,
+    #outdoor .unwind-section {
+        padding: 20px 0;
+        overflow: visible !important;
+    }
+
+    #indoor .section-heading,
+    #outdoor .section-heading {
+        margin-bottom: 40px;
+    }
+
+    #indoor .experience-stack,
+    #outdoor .experience-stack {
+        display: block;
+        width: calc(100% - 32px);
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        overflow: visible !important;
+    }
+
+    #indoor .experience-card,
+    #outdoor .experience-card {
+        position: sticky !important;
+        top: calc(75px + var(--card-index) * 12px);
+        z-index: calc(10 + var(--card-index));
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        min-height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        transform-origin: top center;
+        will-change: transform;
+    }
+
+    #indoor .card-image,
+    #outdoor .card-image {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: transparent;
+        aspect-ratio: 4 / 3;
+    }
+
+    #indoor .card-image img,
+    #outdoor .card-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+
+    #food .chapter-row,
+    #food .chapter-row.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 20px;
+    }
+
+    #food .chapter-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        animation: none;
+    }
+
+    #food .chapter-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #food .chapter-image.menu-image {
+        height: auto;
+        aspect-ratio: 2 / 3;
+    }
+
+    #food .chapter-image.menu-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #food .chapters-container {
+        gap: 40px;
+        padding: 0 16px 30px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-links-group {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 9px;
+        margin-top: 0;
+        padding-top: 18px;
+        border-top: 1px solid rgba(255, 255, 255, .12);
+        text-align: left
+    }
+
+    .footer-copy {
+        width: 100%;
+        color: #b9c0bb;
+        font-size: .72rem;
+        line-height: 1.5
+    }
+
+    .footer-website {
+        width: 100%;
+        text-align: left;
+        color: #b9c0bb;
+        font-size: .72rem;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+        word-break: break-word
+    }
+
+    .footer-developer {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 6px;
+        text-align: left;
+        white-space: nowrap
+    }
+
+    .footer-developer>span {
+        font-size: .68rem
+    }
+
+    .amity-brand img {
+        width: 20px;
+        height: 20px
+    }
+
+    .amity-brand strong {
+        font-size: .72rem;
+        font-weight: 500
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-bg-wrapper {
+        height: 290px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    #indoor .experience-card,
+    #outdoor .experience-card,
+    #indoor .card-image img,
+    #outdoor .card-image img {
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Prevent horizontal overflow from interfering
+       with sticky positioning */
+    html,
+    body {
+        overflow-x: clip;
+    }
+
+    /* Keep all section wrappers visible */
+    #indoor,
+    #outdoor,
+    #indoor .wrap,
+    #outdoor .wrap,
+    #indoor .unwind-section,
+    #outdoor .unwind-section,
+    #indoor .experience-stack,
+    #outdoor .experience-stack {
+        overflow: visible !important;
+    }
+
+    /* Card stack container */
+    #indoor .experience-stack,
+    #outdoor .experience-stack {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding: 0 0 30px;
+    }
+
+    /* Individual sticky cards */
+    #indoor .experience-card,
+    #outdoor .experience-card {
+        position: sticky !important;
+
+        top: calc(75px + var(--card-index) * 12px);
+
+        z-index: calc(10 + var(--card-index));
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        width: 100%;
+        margin: 0 0 24px;
+
+        padding: 22px;
+
+        transform-origin: top center;
+        will-change: transform;
+    }
+
+    /* Card images */
+    #indoor .card-image,
+    #outdoor .card-image {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+    }
+
+    #indoor .card-image img,
+    #outdoor .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* ==========================================================
+   TABLET SCREENS: 768px - 992px
+   Keeps the existing tablet layout, with roomier spacing.
+   ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .experience .wrap,
+    .local_chapter .wrap {
+        gap: 34px;
+    }
+
+    .experience-text h2 {
+        font-size: clamp(2.4rem, 4.5vw, 3rem);
+    }
+
+    .local_chapter-text h2 {
+        font-size: clamp(2.4rem, 5vw, 3rem);
+    }
+
+    .temple-head h2 {
+        font-size: clamp(2.2rem, 5vw, 2.8rem);
+    }
+
+    .route-stop {
+        flex-basis: 165px;
+    }
+
+    .dest-card {
+        gap: 24px;
+        padding: 16px;
+    }
+
+    .dest-img {
+        height: 280px;
+    }
+
+    .dest-desc {
+        padding: 14px 8px;
+    }
+
+    .booking-layout {
+        gap: 18px;
+    }
+
+    .booking-form {
+        padding: 20px;
+    }
+
+    .form-heading h2 {
+        font-size: 24px;
+    }
+
+   #indoor .experience-stack,
+#outdoor .experience-stack {
+    width: calc(100% - 40px);
+    max-width: 850px;
+    margin-inline: auto;
+}
+
+#indoor .experience-card,
+#outdoor .experience-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    gap: 26px;
+}
+
+/* Larger card image */
+#indoor .card-image,
+#outdoor .card-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#indoor .card-image img,
+#outdoor .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+    .hero-container {
+        padding-inline: 28px;
+    }
+
+    .hero-title {
+        font-size: clamp(38px, 6vw, 48px);
+    }
+
+    .hero-bg-wrapper {
+        height: 360px;
+    }
+
+    .footer-top {
+        gap: 32px;
+    }
+}
+
+
+/* ==========================================================
+   MOBILE SCREENS: 481px - 767px
+   Uses the existing single-column mobile structure.
+   ========================================================== */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    .wrap {
+        width: calc(100% - 32px);
+    }
+
+    .section {
+        padding: 42px 0;
+    }
+
+    .experience .wrap {
+        gap: 24px;
+        padding: 30px 0;
+    }
+
+    .experience-text h2,
+    .local_chapter-text h2 {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+
+    .local_chapter .wrap {
+        gap: 24px;
+        padding: 24px 12px;
+    }
+
+    .local_chapter-categories {
+        gap: 18px 12px;
+        margin-top: 22px;
+        padding: 22px 0;
+    }
+
+    .temple-head h2 {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+
+    .temple-head p {
+        font-size: 13px;
+    }
+
+    .route-viewport {
+        margin: 24px 0 20px;
+    }
+
+    .route-track {
+        padding-inline: 28px;
+    }
+
+    .route-stop {
+        flex-basis: 140px;
+        height: 52px;
+    }
+
+    .route-stop .nm {
+        font-size: 12px;
+    }
+
+    .route-line {
+        left: 98px;
+        right: 98px;
+    }
+
+    .route-fill {
+        left: 98px;
+    }
+
+    .dest-card {
+        gap: 16px;
+        padding: 8px;
+    }
+
+    .dest-img {
+        height: 220px;
+    }
+
+    .dest-desc h3 {
+        font-size: clamp(1.7rem, 6vw, 2rem);
+    }
+
+    .dest-desc>p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .dest-highlights {
+        gap: 4px;
+    }
+
+    .highlight-item {
+        padding: 10px 4px;
+    }
+
+    .highlight-item strong {
+        font-size: 11px;
+    }
+
+    .highlight-item span,
+    .highlight-item small {
+        font-size: 9px;
+    }
+
+    .terms_conditions,
+    .faq {
+        padding: 18px 14px;
+    }
+
+    .booking-form {
+        padding: 12px;
+    }
+
+    .form-heading h2 {
+        font-size: 21px;
+    }
+
+    .form-block h3,
+    .villa-details h3 {
+        font-size: 18px;
+    }
+
+    .booking-form input:not([type="radio"]):not([type="checkbox"]),
+    .booking-form textarea,
+    .booking-form select {
+        min-height: 42px;
+    }
+
+    .nav-wrap {
+        padding-inline: 16px;
+    }
+
+    .nav-toggle {
+        width: 50px;
+        height: 50px;
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .mobile-nav {
+        right: 18px;
+        bottom: 78px;
+        width: 210px;
+    }
+
+    .hero {
+        padding-top: calc(var(--nav-h) + 8px);
+    }
+
+    .hero-container {
+        padding-inline: 18px;
+    }
+
+    .hero-content {
+        margin-bottom: 24px;
+    }
+
+    .hero-title {
+        font-size: clamp(32px, 7vw, 40px);
+    }
+
+    .hero-description {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    .hero-bg-wrapper {
+        height: 310px;
+    }
+
+    #indoor .experience-stack,
+    #outdoor .experience-stack {
+        width: calc(100% - 28px);
+    }
+
+    #indoor .experience-card,
+    #outdoor .experience-card {
+        top: calc(68px + var(--card-index) * 10px);
+        gap: 14px;
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    #indoor .card-image,
+    #outdoor .card-image {
+        height: 200px;
+    }
+
+    #food .chapters-container {
+        gap: 32px;
+        padding-inline: 14px;
+    }
+
+    .footer-top {
+        gap: 28px;
+    }
+
+    .footer-links-group {
+        gap: 18px;
+    }
+
+    .footer-bottom {
+        gap: 8px;
+    }
+}
+
+
+/* ==========================================================
+   SMALL MOBILE SCREENS: 480px and below
+   Compact spacing and typography; interactions remain intact.
+   ========================================================== */
+@media screen and (max-width: 480px) {
+
+    .wrap {
+        width: calc(100% - 28px);
+    }
+
+    .section {
+        padding: 34px 0;
+    }
+
+    .experience .wrap {
+        gap: 20px;
+        padding: 24px 0;
+    }
+
+    .experience-text h2,
+    .local_chapter-text h2 {
+        font-size: clamp(1.85rem, 8vw, 2.2rem);
+    }
+
+    .experience-text p,
+    .local_chapter-text p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .experience-text .btn {
+        font-size: 12px;
+    }
+
+    .local_chapter .wrap {
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .local_chapter-top {
+        gap: 18px;
+    }
+
+    .local_chapter-categories {
+        gap: 16px 10px;
+        margin-top: 18px;
+        padding: 18px 0;
+    }
+
+    .local_chapter-categories span {
+        font-size: 9px;
+    }
+
+    .temples .wrap {
+        padding: 14px 0;
+
+    }
+
+    .temple-head h2 {
+        font-size: clamp(1.8rem, 8vw, 2.15rem);
+    }
+
+    .temple-head p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .route-viewport {
+        margin: 20px 0 18px;
+    }
+
+    .route-track {
+        padding-inline: 24px;
+    }
+
+    .route-stop {
+        flex-basis: 125px;
+        height: 48px;
+    }
+
+    .route-stop .nm {
+        font-size: 11px;
+    }
+
+    .route-line {
+        left: 86px;
+        right: 86px;
+    }
+
+    .route-fill {
+        left: 86px;
+    }
+
+    .dest-card {
+        gap: 12px;
+        padding: 6px 0;
+    }
+
+    .dest-img {
+    width: 100%;
+    height: 280px;
+    min-height: 280px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.dest-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+    .dest-desc {
+        padding: 8px 3px;
+    }
+
+    .dest-desc h3 {
+        font-size: 1.65rem;
+    }
+
+    .dest-desc>p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .dest-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 8px 0;
+    }
+
+    .highlight-item {
+        padding: 8px 3px;
+    }
+
+    .highlight-item strong {
+        font-size: 10px;
+    }
+
+    .highlight-item span,
+    .highlight-item small {
+        font-size: 9px;
+    }
+
+    .dest-cta {
+        min-width: 170px;
+        font-size: 11px;
+    }
+
+    .guide {
+        padding: 30px 0;
+    }
+
+    .guide .wrap {
+        padding: 14px 0;
+    }
+
+    .terms_conditions,
+    .faq {
+        padding: 16px 12px;
+    }
+
+    .question {
+        gap: 8px;
+    }
+
+    .question a {
+        margin-left: 0;
+    }
+
+    .form {
+        padding: 28px 0 16px;
+    }
+
+    .form .wrap {
+        padding-inline: 6px;
+    }
+
+    .booking-layout {
+        gap: 8px;
+    }
+
+    .booking-form {
+        padding: 10px;
+    }
+
+    .form-heading h2 {
+        font-size: 19px;
+    }
+
+    .form-heading>p {
+        font-size: 10px;
+    }
+
+    .form-kicker,
+    .form-step {
+        font-size: 9px;
+    }
+
+    .form-block h3,
+    .villa-details h3 {
+        font-size: 17px;
+    }
+
+    .form-hint,
+    .form-notice p,
+    .activity-notice p,
+    .villa-details>p {
+        font-size: 10px;
+    }
+
+    .form-block {
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+    }
+
+    .form-notice {
+        padding: 9px 10px;
+        margin-bottom: 12px;
+    }
+
+    .booking-form input:not([type="radio"]):not([type="checkbox"]),
+    .booking-form textarea,
+    .booking-form select {
+        min-height: 40px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .stay-options label>span {
+        min-height: 42px;
+    }
+
+    .stay-options strong,
+    .option-info strong {
+        font-size: 12px;
+    }
+
+    .stay-options small,
+    .option-info small {
+        font-size: 9px;
+    }
+
+    .experience-options summary {
+        min-height: 40px;
+        padding: 7px;
+        gap: 6px;
+    }
+
+    .view-options {
+        font-size: 8px;
+    }
+
+    .option-content {
+        padding: 8px 10px;
+        gap: 8px;
+    }
+
+    .option-content span{
+        font-size: 11px;
+    }
+
+    .selection-status {
+        padding: 9px 10px;
+        gap: 8px;
+    }
+
+    .selection-status span,
+    .selection-status small {
+        font-size: 9px;
+    }
+
+    .message-block textarea {
+        min-height: 64px;
+    }
+
+    .booking-submit {
+        min-height: 42px;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .form-disclaimer {
+        font-size: 9px;
+    }
+
+    .contact-info {
+        gap: 10px;
+        margin: 12px 0;
+    }
+
+    .contact-info p,
+    .planning-help p {
+        font-size: 10px;
+    }
+
+    .planning-help {
+        padding: 10px;
+    }
+
+    .form-footer {
+        margin-top: 12px;
+        padding-top: 8px;
+    }
+
+    .form-footer span {
+        font-size: 8px;
+    }
+
+    .nav-wrap {
+        padding-inline: 12px;
+    }
+
+    .navbar {
+    padding: 12px 0;
+}
+
+.navbar.scrolled {
+    padding: 8px 0;
+}
+
+    .nav-toggle {
+        width: 48px;
+        height: 48px;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .nav-logo img {
+        width: 135px;
+        height: 42px;
+    }
+
+    .mobile-nav {
+        right: 14px;
+        bottom: 72px;
+        width: 195px;
+        padding: 20px 16px;
+    }
+
+    .mobile-nav-links {
+        gap: 15px;
+    }
+
+    .mobile-nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-top: calc(var(--nav-h) + 6px);
+    }
+
+    .hero-container {
+        padding-inline: 14px;
+    }
+
+    .hero-content {
+        margin-top: 6px;
+        margin-bottom: 20px;
+    }
+
+    .hero-eyebrow {
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+        font-size: 9px;
+    }
+
+    .hero-title {
+        font-size: clamp(29px, 8vw, 35px);
+        line-height: 1.12;
+        margin-bottom: 12px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .hero-bg-wrapper {
+        height: 260px;
+        margin-top: 10px;
+    }
+
+    #indoor,
+    #outdoor {
+        padding: 16px 0;
+    }
+
+    #indoor .unwind-section,
+    #outdoor .unwind-section {
+        padding: 16px 0;
+    }
+
+    #indoor .section-heading,
+    #outdoor .section-heading {
+        margin-bottom: 28px;
+    }
+
+    #indoor .experience-stack,
+    #outdoor .experience-stack {
+        width: calc(100% - 24px);
+        padding-bottom: 20px;
+    }
+
+       #indoor .experience-card,
+    #outdoor .experience-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 20px;
+        gap: 22px;
+    }
+
+    /* Increase image container height */
+    #indoor .card-image,
+    #outdoor .card-image {
+        width: 100%;
+        height: 280px;
+        aspect-ratio: auto;
+    }
+
+    /* Image styling */
+    #indoor .card-image img,
+    #outdoor .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #food .chapter-row,
+    #food .chapter-row.reverse {
+        gap: 16px;
+    }
+
+    #food .chapter-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    #food .chapter-image.menu-image {
+        aspect-ratio: 2 / 3;
+    }
+
+    #food .chapters-container {
+        gap: 26px;
+        padding: 0 12px 24px;
+    }
+
+    .footer-top {
+        gap: 24px;
+    }
+
+    .footer-links-group {
+        gap: 16px;
+    }
+
+    .footer-bottom {
+        gap: 7px;
+        padding-top: 14px;
+    }
+
+    .footer-copy,
+    .footer-website {
+        font-size: .68rem;
+    }
+
+    .footer-developer {
+        gap: 5px;
+    }
+
+    .footer-developer>span {
+        font-size: .64rem;
+    }
+
+    .amity-brand img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .amity-brand strong {
+        font-size: .68rem;
+    }
+}
+
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 1100px) {
+
+     .temples .wrap {
+        padding: 20px 25px;
+    }
+
+    .dest-card {
+        gap: 22px;
+        padding: 14px;
+    }
+
+    .dest-img {
+        width: 100%;
+        height: 600px;
+        min-height: 340px;
+        overflow: hidden;
+    }
+
+    .dest-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .dest-desc {
+        padding: 14px 8px;
+    }
+
+    /* Increase overall card height */
+    #indoor .experience-card,
+    #outdoor .experience-card {
+        min-height: 480px;
+        padding: 35px;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    /* Increase indoor image height */
+    #indoor .card-image {
+        height: 400px;
+        width: 100%;
+    }
+
+    /* Increase outdoor image height */
+    #outdoor .card-image {
+        height: 400px;
+        width: 100%;
+        aspect-ratio: auto;
+    }
+
+    /* Image fills its container */
+    #indoor .card-image img,
+    #outdoor .card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* Remove outer section spacing */
+    .temples {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    /* Make wrapper occupy the entire screen */
+    .temples .wrap {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 20px 0 0 !important;
+    }
+
+    /* Keep heading and timeline slightly inset */
+    .temple-head {
+        padding: 0 20px;
+    }
+
+    .route-viewport {
+        width: 100%;
+        margin: 30px 0 25px;
+    }
+
+    /* Carousel should touch both screen edges */
+    .dest-carousel {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    .dest-track {
+        width: 100%;
+        padding: 0;
+        scroll-snap-type: x mandatory;
+    }
+
+    /* Remove card spacing and outer borders */
+    .dest-card {
+        flex: 0 0 100%;
+        width: 100%;
+        min-width: 100%;
+        padding: 0 !important;
+        margin: 0;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        gap: 15px;
+        scroll-snap-align: start;
+    }
+
+    /* Image goes completely edge-to-edge */
+    .dest-img {
+        width: 100%;
+        height: 280px;
+        min-height: 280px;
+        border-radius: 0 !important;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .dest-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    /* Retain comfortable spacing for text */
+    .dest-desc {
+        padding: 12px 22px 25px !important;
+    }
+
+    /* Highlights */
+    .dest-highlights {
+        padding: 12px 0;
+    }
+}
