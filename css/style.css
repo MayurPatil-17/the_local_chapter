@@ -5,7 +5,7 @@
     --almond: #EDE7D9;
     --cream: #F7F3E8;
     --gold: #B89B5E;
-    --gold-soft: #D5BE8A;
+    --gold-soft: #D5BE8A; 
     --dark: #101813;
     --ink: #1B2A22;
     --muted: #444A42;
@@ -126,7 +126,8 @@ h3 {
 /* Frosted-glass background applied on scroll */
 .navbar.scrolled {
     padding: 10px 0;
-    background-color: rgba(129, 129, 128, 0.616);
+    /* background-color: rgba(129, 129, 128, 0.616); */
+    background-color: #737461;
     /* Fixed syntax: removed stray 'black' */
     backdrop-filter: blur(100px) saturate(180%);
     -webkit-backdrop-filter: blur(100px) saturate(180%);
@@ -338,7 +339,7 @@ h3 {
 /* ===================== Experience Starts =================== */
 
 .experience {
-    background: var(--forest);
+    background: #49493e;
     color: var(--cream);
     padding: 60px 0;
     /* min-height: auto; */
@@ -408,10 +409,10 @@ h3 {
     transform: translate(2px, -2px);
 }
 
-.experience-text .btn:focus-visible {
+/* .experience-text .btn:focus-visible {
     outline: 2px solid var(--cream);
     outline-offset: 5px;
-}
+} */
 
 .experience-image {
     position: relative;
@@ -1290,10 +1291,10 @@ h3 {
 }
 
 /* Special styling for Menu image */
-#food .chapter-image.menu-image {
+/* #food .chapter-image.menu-image {
     height: 80%;
     overflow: hidden;
-}
+} */
 
 #food .chapter-image.menu-image img {
     width: 100%;
@@ -2015,6 +2016,11 @@ h3 {
     line-height: 1.5;
 }
 
+.villa-details a{
+    color: var(--muted);
+    text-decoration: none;
+}
+
 .contact-info {
     display: grid;
     gap: 16px;
@@ -2050,7 +2056,7 @@ h3 {
 .villa-map iframe {
     display: block;
     width: 100%;
-    height: 180px;
+    height: 280px;
     border: 0;
     border-radius: 3px;
 }
