@@ -718,10 +718,10 @@
         object-position: center;
     }
 
-    #food .chapter-image.menu-image {
+    /* #food .chapter-image.menu-image {
         height: auto;
         aspect-ratio: 2 / 3;
-    }
+    } */
 
     #food .chapter-image.menu-image img {
         width: 100%;
