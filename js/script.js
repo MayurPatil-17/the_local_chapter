@@ -410,7 +410,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // WhatsApp number: country code without + or spaces.
 
-    const whatsappNumber = "919075602808";
+    const whatsappNumber = "919373609028";
 
     let activityLimit = 0;
 
