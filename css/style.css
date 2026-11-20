@@ -339,10 +339,21 @@ h3 {
 /* ===================== Experience Starts =================== */
 
 .experience {
-    background: #49493e;
-    color: var(--cream);
+     background:
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(184, 155, 94, 0.16),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #F2EADB 0%,
+            #E8DDC8 55%,
+            #EDE4D2 100%
+        );
+
+    color: #49493e;
     padding: 60px 0;
-    /* min-height: auto; */
     overflow: hidden;
 }
 
@@ -364,17 +375,24 @@ h3 {
     letter-spacing: -.03em
 }
 
+.experience-text h2,
+.experience-text p {
+    color: #49493e;
+}
+
+.experience-text h2 span {
+    color: #A77D37;
+}
+
 .experience-text h2 {
     width: 80%;
     max-width: 100%;
     margin: 10px 0 24px;
     line-height: .98;
     letter-spacing: -1.5px;
-    color: var(--cream)
 }
 
 .experience-text h2 span {
-    color: var(--gold-soft);
     font-style: italic;
     white-space: nowrap;
 }
@@ -387,7 +405,6 @@ h3 {
     line-height: 1.58;
     text-align: left;
     max-width: 95%;
-    color: var(--cream)
 }
 
 .experience-text .btn {
@@ -417,10 +434,12 @@ h3 {
 .experience-image {
     position: relative;
     width: 100%;
-    height: clamp(580px, 48vw, 500px);
+    height: clamp(580px, 48vw, 700px);
+    /* height: auto; */
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 8px 8px 20px var(--shadow-strong-alpha);
+    /* aspect-ratio: 3/4; */
 }
 
 .experience-image img {
